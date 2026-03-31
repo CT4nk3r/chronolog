@@ -1,7 +1,7 @@
 /**
  * driftCalc.test.ts
  *
- * 100 % coverage target for src/utils/driftCalc.ts.
+ * 100% coverage target for src/utils/driftCalc.ts.
  *
  * Covers:
  *  - calcDriftPerDay: normal case, zero interval, negative interval

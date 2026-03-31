@@ -13,7 +13,7 @@
 - Export data as JSON via the OS share sheet
 - Import data from a JSON backup file (merge by id, duplicates skipped)
 - Dark mode (follows system preference, toggleable in Settings)
-- 100 % offline — zero network calls
+- 100% offline — zero network calls
 - Full accessibility labels on every interactive element
 
 ---
@@ -103,7 +103,7 @@ The output is located at `android/app/build/outputs/`.
 # Run all tests
 npm test
 
-# Run tests with coverage (must be 100 % for driftCalc.ts)
+# Run tests with coverage (must be 100% for driftCalc.ts)
 npm run test:coverage
 ```
 
