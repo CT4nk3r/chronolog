@@ -39,11 +39,18 @@ jspm_packages/
 # Coverage directory
 coverage/
 
-# React Native build artifacts
-android/
+# React Native build artifacts - iOS
 ios/
-*.keystore
-!debug.keystore
+
+# Android build artifacts (keep source files committed)
+android/.gradle/
+android/build/
+android/app/build/
+android/app/debug/
+android/app/profile/
+android/app/release/
+android/local.properties
+android/app/release.keystore
 
 # Buck
 buck-out/
