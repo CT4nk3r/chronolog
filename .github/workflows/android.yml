@@ -44,7 +44,9 @@ jobs:
 
       - name: Decode keystore
         run: |
+          mkdir -p android/app
           echo "${{ secrets.KEYSTORE_BASE64 }}" | base64 --decode > android/app/release.keystore
+          chmod 600 android/app/release.keystore
 
       - name: Configure signing via Gradle properties
         env:
@@ -69,6 +71,8 @@ jobs:
         if: always()
         run: |
           rm -f android/app/release.keystore
+          mkdir -p ~/.gradle
+          touch ~/.gradle/gradle.properties
           sed -i '/android.injected.signing/d' ~/.gradle/gradle.properties
 
       - name: Upload release APK
