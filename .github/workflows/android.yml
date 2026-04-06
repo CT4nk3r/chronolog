@@ -70,6 +70,7 @@ jobs:
         if: always()
         run: |
           rm -f android/app/release.keystore
+          mkdir -p ~/.gradle
           touch ~/.gradle/gradle.properties
           sed -i '/android.injected.signing/d' ~/.gradle/gradle.properties
 
